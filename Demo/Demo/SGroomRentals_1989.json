@@ -1,0 +1,1032 @@
+{
+  "id": "834929bf-288b-4ee9-b5f3-005eabadd176",
+  "screens": [
+    {
+      "id": "8834929bf-288b-4ee9-b5f3-005e634929bf",
+      "groups": [
+        {
+          "fields": [
+            {
+              "id": "9ee22d6b-5f31-4c0f-be11-45febb274d35",
+              "meta": {
+                "component": "text",
+                "default_value": "",
+                "field_name": "title"
+              },
+              "dependency_rules": [],
+              "ui_rules": {
+                "keyboard_type": "text",
+                "label": "TAG_TITLE_LABEL",
+                "placeholder": "TAG_TITLE_PLACEHOLDER",
+                "visible": true
+              },
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_TITLE_IS_REQUIRED",
+                  "type": "is_required",
+                  "value": true
+                },
+                {
+                  "error_message": "ERR_MSG_TITLE_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                },
+                {
+                  "error_message": "ERR_MSG_TITLE_MAX_LENGTH",
+                  "type": "max_length",
+                  "value": 255
+                }
+              ]
+            }
+          ],
+          "id": "c7ac5b91-aac7-4397-890b-0a0bcfa769cd",
+          "meta": {
+            "footer": null,
+            "group_name": "title_group",
+            "header": null,
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "id": "901284129084210984",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "property_nearest_transit_station",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_NEAREST_MRT",
+                "placeholder": "TAG_PICKER_PLACEHOLDER",
+                "options": [
+                  {
+                    "value": "SG_ADM_NS10",
+                    "display_name": "Admiralty (NS10)"
+                  },
+                  {
+                    "value": "SG_ALJ_EW9",
+                    "display_name": "Aljunied (EW9)"
+                  },
+                  {
+                    "value": "SG_AMK_NS16",
+                    "display_name": "Ang Mo Kio (NS16)"
+                  },
+                  {
+                    "value": "SG_BLY_CC12",
+                    "display_name": "Bartley (CC12)"
+                  },
+                  {
+                    "value": "SG_BFT_CE1_DT16",
+                    "display_name": "Bayfront (CE1 DT16)"
+                  },
+                  {
+                    "value": "SG_BTW_DT5",
+                    "display_name": "Beauty World (DT5)"
+                  },
+                  {
+                    "value": "SG_BDK_EW5",
+                    "display_name": "Bedok (EW5)"
+                  },
+                  {
+                    "value": "SG_BDN_DT29",
+                    "display_name": "Bedok North (DT29)"
+                  },
+                  {
+                    "value": "SG_BDR_DT30",
+                    "display_name": "Bedok Reservoir (DT30)"
+                  },
+                  {
+                    "value": "SG_BCL_DT21",
+                    "display_name": "Bencoolen (DT21)"
+                  },
+                  {
+                    "value": "SG_BDM_DT23",
+                    "display_name": "Bendemeer (DT23)"
+                  },
+                  {
+                    "value": "SG_BSH_CC15_NS17",
+                    "display_name": "Bishan (CC15 NS17)"
+                  },
+                  {
+                    "value": "SG_BNK_NE9",
+                    "display_name": "Boon Keng (NE9)"
+                  },
+                  {
+                    "value": "SG_BNL_EW27",
+                    "display_name": "Boon Lay (EW27)"
+                  },
+                  {
+                    "value": "SG_BTN_CC19_DT9",
+                    "display_name": "Botanic Gardens (CC19 DT9)"
+                  },
+                  {
+                    "value": "SG_BDL_NS18",
+                    "display_name": "Braddell (NS18)"
+                  },
+                  {
+                    "value": "SG_BBS_CC2",
+                    "display_name": "Bras Basah (CC2)"
+                  },
+                  {
+                    "value": "SG_BGK_NE15",
+                    "display_name": "Buangkok (NE15)"
+                  },
+                  {
+                    "value": "SG_BGS_DT14_EW12",
+                    "display_name": "Bugis (DT14 EW12)"
+                  },
+                  {
+                    "value": "SG_BBT_NS2",
+                    "display_name": "Bukit Batok (NS2)"
+                  },
+                  {
+                    "value": "SG_BGB_NS3",
+                    "display_name": "Bukit Gombak (NS3)"
+                  },
+                  {
+                    "value": "SG_BPJ_DT1_BP6",
+                    "display_name": "Bukit Panjang (DT1 BP6)"
+                  },
+                  {
+                    "value": "SG_BNV_CC22_EW21",
+                    "display_name": "Buona Vista (CC22 EW21)"
+                  },
+                  {
+                    "value": "SG_CDT_CC17_TE9",
+                    "display_name": "Caldecott (CC17 TE9)"
+                  },
+                  {
+                    "value": "SG_CSW_DT2",
+                    "display_name": "Cashew (DT2)"
+                  },
+                  {
+                    "value": "SG_CGA_CG2",
+                    "display_name": "Changi Airport (CG2)"
+                  },
+                  {
+                    "value": "SG_CNT_DT19_NE4",
+                    "display_name": "Chinatown (DT19 NE4)"
+                  },
+                  {
+                    "value": "SG_CNG_EW25",
+                    "display_name": "Chinese Garden (EW25)"
+                  },
+                  {
+                    "value": "SG_CCK_NS4_BP1",
+                    "display_name": "Choa Chu Kang (NS4 BP1)"
+                  },
+                  {
+                    "value": "SG_CTH_EW13_NS25",
+                    "display_name": "City Hall (EW13 NS25)"
+                  },
+                  {
+                    "value": "SG_CQY_NE5",
+                    "display_name": "Clarke Quay (NE5)"
+                  },
+                  {
+                    "value": "SG_CLE_EW23",
+                    "display_name": "Clementi (EW23)"
+                  },
+                  {
+                    "value": "SG_COM_EW20",
+                    "display_name": "Commonwealth (EW20)"
+                  },
+                  {
+                    "value": "SG_DKT_CC8",
+                    "display_name": "Dakota (CC8)"
+                  },
+                  {
+                    "value": "SG_DBG_CC1_NS24_NE6",
+                    "display_name": "Dhoby Ghaut (CC1 NS24 NE6)"
+                  },
+                  {
+                    "value": "SG_DVR_EW22",
+                    "display_name": "Dover (EW22)"
+                  },
+                  {
+                    "value": "SG_DTN_DT17",
+                    "display_name": "Downtown (DT17)"
+                  },
+                  {
+                    "value": "SG_EPN_CC3",
+                    "display_name": "Esplanade (CC3)"
+                  },
+                  {
+                    "value": "SG_EUN_EW7",
+                    "display_name": "Eunos (EW7)"
+                  },
+                  {
+                    "value": "SG_XPO_CG1_DT35",
+                    "display_name": "Expo (CG1 DT35)"
+                  },
+                  {
+                    "value": "SG_FRP_NE8",
+                    "display_name": "Farrer Park (NE8)"
+                  },
+                  {
+                    "value": "SG_FRR_CC20",
+                    "display_name": "Farrer Road (CC20)"
+                  },
+                  {
+                    "value": "SG_FCN_DT20",
+                    "display_name": "Fort Canning (DT20)"
+                  },
+                  {
+                    "value": "SG_GLB_DT24",
+                    "display_name": "Geylang Bahru (DT24)"
+                  },
+                  {
+                    "value": "SG_GCL_EW30",
+                    "display_name": "Gul Circle (EW30)"
+                  },
+                  {
+                    "value": "SG_HBF_CC29_NE1",
+                    "display_name": "HarbourFront (CC29 NE1)"
+                  },
+                  {
+                    "value": "SG_HPV_CC25",
+                    "display_name": "Haw Par Villa (CC25)"
+                  },
+                  {
+                    "value": "SG_HVW_DT3",
+                    "display_name": "Hillview (DT3)"
+                  },
+                  {
+                    "value": "SG_HLV_CC21",
+                    "display_name": "Holland Village (CC21)"
+                  },
+                  {
+                    "value": "SG_HGN_NE14",
+                    "display_name": "Hougang (NE14)"
+                  },
+                  {
+                    "value": "SG_JLB_DT22",
+                    "display_name": "Jalan Besar (DT22)"
+                  },
+                  {
+                    "value": "SG_JKN_EW29",
+                    "display_name": "Joo Koon (EW29)"
+                  },
+                  {
+                    "value": "SG_JUR_EW24_NS1",
+                    "display_name": "Jurong East (EW24 NS1)"
+                  },
+                  {
+                    "value": "SG_KKB_DT28",
+                    "display_name": "Kaki Bukit (DT28)"
+                  },
+                  {
+                    "value": "SG_KAL_EW10",
+                    "display_name": "Kallang (EW10)"
+                  },
+                  {
+                    "value": "SG_KEM_EW6",
+                    "display_name": "Kembangan (EW6)"
+                  },
+                  {
+                    "value": "SG_KRG_CC24",
+                    "display_name": "Kent Ridge (CC24)"
+                  },
+                  {
+                    "value": "SG_KTB_NS14",
+                    "display_name": "Khatib (NS14)"
+                  },
+                  {
+                    "value": "SG_KAP_DT6",
+                    "display_name": "King Albert Park (DT6)"
+                  },
+                  {
+                    "value": "SG_KVN_NE13",
+                    "display_name": "Kovan (NE13)"
+                  },
+                  {
+                    "value": "SG_KRJ_NS7",
+                    "display_name": "Kranji (NS7)"
+                  },
+                  {
+                    "value": "SG_LBD_CC27",
+                    "display_name": "Labrador Park (CC27)"
+                  },
+                  {
+                    "value": "SG_LKS_EW26",
+                    "display_name": "Lakeside (EW26)"
+                  },
+                  {
+                    "value": "SG_LVR_EW11",
+                    "display_name": "Lavender (EW11)"
+                  },
+                  {
+                    "value": "SG_LTI_DT12_NE7",
+                    "display_name": "Little India (DT12 NE7)"
+                  },
+                  {
+                    "value": "SG_LRC_CC14",
+                    "display_name": "Lorong Chuan (CC14)"
+                  },
+                  {
+                    "value": "SG_MPS_CC10_DT26",
+                    "display_name": "MacPherson (CC10 DT26)"
+                  },
+                  {
+                    "value": "SG_MRB_CE2_NS27_TE20",
+                    "display_name": "Marina Bay (CE2 NS27 TE20)"
+                  },
+                  {
+                    "value": "SG_MSP_NS28",
+                    "display_name": "Marina South Pier (NS28)"
+                  },
+                  {
+                    "value": "SG_MSL_NS8",
+                    "display_name": "Marsiling (NS8)"
+                  },
+                  {
+                    "value": "SG_MRM_CC16",
+                    "display_name": "Marymount (CC16)"
+                  },
+                  {
+                    "value": "SG_MTR_DT25",
+                    "display_name": "Mattar (DT25)"
+                  },
+                  {
+                    "value": "SG_MBT_CC7",
+                    "display_name": "Mountbatten (CC7)"
+                  },
+                  {
+                    "value": "SG_NEW_DT11_NS21",
+                    "display_name": "Newton (DT11 NS21)"
+                  },
+                  {
+                    "value": "SG_NCH_CC5",
+                    "display_name": "Nicoll Highway[C] (CC5)"
+                  },
+                  {
+                    "value": "SG_NOV_NS20",
+                    "display_name": "Novena (NS20)"
+                  },
+                  {
+                    "value": "SG_ONH_CC23",
+                    "display_name": "one-north (CC23)"
+                  },
+                  {
+                    "value": "SG_ORC_NS22_TE14",
+                    "display_name": "Orchard (NS22 TE14)"
+                  },
+                  {
+                    "value": "SG_OTP_EW16_NE3_TE17",
+                    "display_name": "Outram Park (EW16 NE3 TE17)"
+                  },
+                  {
+                    "value": "SG_PPJ_CC26",
+                    "display_name": "Pasir Panjang (CC26)"
+                  },
+                  {
+                    "value": "SG_PSR_EW1",
+                    "display_name": "Pasir Ris (EW1)"
+                  },
+                  {
+                    "value": "SG_PYL_CC9_EW8",
+                    "display_name": "Paya Lebar (CC9 EW8)"
+                  },
+                  {
+                    "value": "SG_PNR_EW28",
+                    "display_name": "Pioneer (EW28)"
+                  },
+                  {
+                    "value": "SG_PTP_NE10",
+                    "display_name": "Potong Pasir (NE10)"
+                  },
+                  {
+                    "value": "SG_PMN_CC4_DT15",
+                    "display_name": "Promenade (CC4 DT15)"
+                  },
+                  {
+                    "value": "SG_PGL_NE17_PTC",
+                    "display_name": "Punggol (NE17 PTC)"
+                  },
+                  {
+                    "value": "SG_QUE_EW19",
+                    "display_name": "Queenstown (EW19)"
+                  },
+                  {
+                    "value": "SG_RFP_EW14_NS26",
+                    "display_name": "Raffles Place (EW14 NS26)"
+                  },
+                  {
+                    "value": "SG_RDH_EW18",
+                    "display_name": "Redhill (EW18)"
+                  },
+                  {
+                    "value": "SG_RCR_DT13",
+                    "display_name": "Rochor (DT13)"
+                  },
+                  {
+                    "value": "SG_SBW_NS11",
+                    "display_name": "Sembawang (NS11)"
+                  },
+                  {
+                    "value": "SG_SKG_NE16_STC",
+                    "display_name": "Sengkang (NE16 STC)"
+                  },
+                  {
+                    "value": "SG_SER_CC13_NE12",
+                    "display_name": "Serangoon (CC13 NE12)"
+                  },
+                  {
+                    "value": "SG_SIM_EW3",
+                    "display_name": "Simei (EW3)"
+                  },
+                  {
+                    "value": "SG_SAV_DT7",
+                    "display_name": "Sixth Avenue (DT7)"
+                  },
+                  {
+                    "value": "SG_SOM_NS23",
+                    "display_name": "Somerset (NS23)"
+                  },
+                  {
+                    "value": "SG_SDM_CC6",
+                    "display_name": "Stadium (CC6)"
+                  },
+                  {
+                    "value": "SG_STV_DT10_TE11",
+                    "display_name": "Stevens (DT10 TE11)"
+                  },
+                  {
+                    "value": "SG_TSG_CC11",
+                    "display_name": "Tai Seng (CC11)"
+                  },
+                  {
+                    "value": "SG_TAM_DT32_EW2",
+                    "display_name": "Tampines (DT32 EW2)"
+                  },
+                  {
+                    "value": "SG_TPE_DT33",
+                    "display_name": "Tampines East (DT33)"
+                  },
+                  {
+                    "value": "SG_TPW_DT31",
+                    "display_name": "Tampines West (DT31)"
+                  },
+                  {
+                    "value": "SG_TKK_DT8",
+                    "display_name": "Tan Kah Kee (DT8)"
+                  },
+                  {
+                    "value": "SG_TNM_EW4_CG",
+                    "display_name": "Tanah Merah (EW4 CG)"
+                  },
+                  {
+                    "value": "SG_TPG_EW15",
+                    "display_name": "Tanjong Pagar (EW15)"
+                  },
+                  {
+                    "value": "SG_TLA_DT18",
+                    "display_name": "Telok Ayer (DT18)"
+                  },
+                  {
+                    "value": "SG_TLB_CC28",
+                    "display_name": "Telok Blangah (CC28)"
+                  },
+                  {
+                    "value": "SG_TIB_EW17",
+                    "display_name": "Tiong Bahru (EW17)"
+                  },
+                  {
+                    "value": "SG_TAP_NS19",
+                    "display_name": "Toa Payoh (NS19)"
+                  },
+                  {
+                    "value": "SG_TCR_EW31",
+                    "display_name": "Tuas Crescent (EW31)"
+                  },
+                  {
+                    "value": "SG_TLK_EW33",
+                    "display_name": "Tuas Link (EW33)"
+                  },
+                  {
+                    "value": "SG_TWR_EW32",
+                    "display_name": "Tuas West Road (EW32)"
+                  },
+                  {
+                    "value": "SG_UBI_DT27",
+                    "display_name": "Ubi (DT27)"
+                  },
+                  {
+                    "value": "SG_UPC_DT34",
+                    "display_name": "Upper Changi (DT34)"
+                  },
+                  {
+                    "value": "SG_WDL_NS9_TE2",
+                    "display_name": "Woodlands (NS9 TE2)"
+                  },
+                  {
+                    "value": "SG_WLH_NE11",
+                    "display_name": "Woodleigh (NE11)"
+                  },
+                  {
+                    "value": "SG_YWT_NS5",
+                    "display_name": "Yew Tee (NS5)"
+                  },
+                  {
+                    "value": "SG_YCK_NS15",
+                    "display_name": "Yio Chu Kang (NS15)"
+                  },
+                  {
+                    "value": "SG_YIS_NS13",
+                    "display_name": "Yishun (NS13)"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "9ee22d6b-5f31-4c0f-be11-45febb274d35",
+              "meta": {
+                "component": "text",
+                "field_name": "postal_code",
+                "default_value": ""
+              },
+              "ui_rules": {
+                "keyboard_type": "text",
+                "label": "Postal Code",
+                "placeholder": "",
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_TITLE_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "242132215225321sfd",
+              "meta": {
+                "component": "text",
+                "default_value": "",
+                "field_name": "street_name"
+              },
+              "ui_rules": {
+                "keyboard_type": "text",
+                "label": "Street Name",
+                "placeholder": "",
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_STREET_NAME_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                },
+                {
+                  "error_message": "ERR_MSG_STREET_NAME_MAX_LENGTH",
+                  "type": "max_length",
+                  "value": 100
+                }
+              ]
+            }
+          ],
+          "id": "241sfdg421gdf21sdg21",
+          "meta": {
+            "footer": null,
+            "group_name": "location_group",
+            "header": "TAG_PROPERTY_LOCATION_HEADER",
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "id": "df321dsfg321gfd132fdg123df1",
+              "meta": {
+                "component": "short_text",
+                "field_name": "price",
+                "default_value": null
+              },
+              "ui_rules": {
+                "keyboard_type": "number",
+                "label": "Rental Price",
+                "max_decimal_places": 2,
+                "placeholder": "0",
+                "prefix": "COUNTRY_TAG_CURRENCY",
+                "suffix": null,
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_PRICE_IS_REQUIRED",
+                  "type": "is_required",
+                  "value": true
+                },
+                {
+                  "error_message": "ERR_MSG_PRICE_INVALID",
+                  "type": "field_type",
+                  "value": "float"
+                },
+                {
+                  "error_message": "ERR_MSG_PRICE_MIN_VALUE",
+                  "type": "min_value",
+                  "value": 50
+                },
+                {
+                  "error_message": "ERR_MSG_PRICE_MAX_VALUE",
+                  "type": "max_value",
+                  "value": 10000
+                }
+              ]
+            },
+            {
+              "id": "sdgsd235231swdrf31sdf321",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "lease_term",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_LEASE_TERM_LABEL",
+                "options": [
+                  {
+                    "display_name": "TAG_PROPERTY_LEASE_1_YEAR",
+                    "value": "PROPERTY_LEASE_1_YEAR"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEASE_2_YEAR",
+                    "value": "PROPERTY_LEASE_2_YEARS"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEASE_3_PLUS_YEAR",
+                    "value": "PROPERTY_LEASE_3_PLUS_YEARS"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEASE_SHORT_TERM",
+                    "value": "PROPERTY_LEASE_SHORT_TERM"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEASE_FLEXIBLE",
+                    "value": "PROPERTY_LEASE_FLEXIBLE"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "dgfsgfdhgffghsdf321",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "furnishing",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_FURNISHING_LABEL",
+                "placeholder": "TAG_PICKER_PLACEHOLDER",
+                "options": [
+                  {
+                    "display_name": "TAG_PROPERTY_FURNISHING_UNFURNISHED",
+                    "value": "PROPERTY_FURNISHING_UNFURNISHED"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_FURNISHING_PARTIALLY_FURNISHED",
+                    "value": "PROPERTY_FURNISHING_PARTIALLY_FURNISHED"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_FURNISHING_FULLY_FURNISHED",
+                    "value": "PROPERTY_FURNISHING_FULLY_FURNISHED"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "gdfsg1gf21sgfds21g",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "floor_level",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_FLOOR_LEVEL_LABEL",
+                "placeholder": "TAG_PICKER_PLACEHOLDER",
+                "options": [
+                  {
+                    "display_name": "TAG_PROPERTY_LEVEL_GROUND",
+                    "value": "PROPERTY_LEVEL_GROUND"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEVEL_LOW",
+                    "value": "PROPERTY_LEVEL_LOW"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEVEL_MID",
+                    "value": "PROPERTY_LEVEL_MID"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEVEL_HIGH",
+                    "value": "PROPERTY_LEVEL_HIGH"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_LEVEL_PENTHOUSE",
+                    "value": "PROPERTY_LEVEL_PENTHOUSE"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "fgdgdf234523212sdf1",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "property_type",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_TYPE_LABEL",
+                "placeholder": "TAG_PICKER_PLACEHOLDER",
+                "options": [
+                  {
+                    "display_name": "TAG_PROPERTY_TYPE_HDB",
+                    "value": "PROPERTY_TYPE_HDB"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_TYPE_CONDO",
+                    "value": "PROPERTY_TYPE_CONDO"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_TYPE_LANDED",
+                    "value": "PROPERTY_TYPE_LANDED"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "sdfkjhsdfkjhsdjkh5r32523231",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "room_type",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_ROOM_TYPE_LABEL",
+                "placeholder": "TAG_PICKER_PLACEHOLDER",
+                "options": [
+                  {
+                    "display_name": "TAG_PROPERTY_ROOM_TYPE_MASTER",
+                    "value": "PROPERTY_ROOM_TYPE_MASTER"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_ROOM_TYPE_COMMON",
+                    "value": "PROPERTY_ROOM_TYPE_COMMON"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_ROOM_TYPE_SHARED",
+                    "value": "PROPERTY_ROOM_TYPE_SHARED"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "gdfsgsdgsg1gf21sgfds21g",
+              "meta": {
+                "component": "single_picker",
+                "field_name": "tenant_gender",
+                "default_value": null
+              },
+              "ui_rules": {
+                "label": "TAG_PROPERTY_TENANT_GENDER_LABEL",
+                "placeholder": "TAG_PICKER_PLACEHOLDER",
+                "default_value": "",
+                "options": [
+                  {
+                    "display_name": "TAG_PROPERTY_TENANT_GENDER_ANY",
+                    "value": "PROPERTY_TENANT_GENDER_ANY"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_TENANT_GENDER_FEMALE",
+                    "value": "PROPERTY_TENANT_GENDER_FEMALE"
+                  },
+                  {
+                    "display_name": "TAG_PROPERTY_TENANT_GENDER_MALE",
+                    "value": "PROPERTY_TENANT_GENDER_MALE"
+                  }
+                ],
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_GENERIC_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            },
+            {
+              "id": "gfdsfd3as21f32as1f32a1ser",
+              "meta": {
+                "component": "textview",
+                "default_value": "",
+                "field_name": "description"
+              },
+              "ui_rules": {
+                "bottom_space": true,
+                "placeholder": "Describe the room. Include any information renters should know before getting in touch.",
+                "tip_button_status": true,
+                "visible": true
+              },
+              "dependency_rules": [],
+              "validation_rules": [
+                {
+                  "error_message": "ERR_MSG_DESCRIPTION_INVALID",
+                  "type": "field_type",
+                  "value": "string"
+                }
+              ]
+            }
+          ],
+          "id": "4t3edfgdf32g43sd21g",
+          "meta": {
+            "footer": null,
+            "group_name": "unit_details_group",
+            "header": "TAG_UNIT_DETAILS_GROUP_LABEL",
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "dependency_rules": [],
+              "id": "e4twklhkwlfsd903248",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_air_conditioned"
+              },
+              "ui_rules": {
+                "label": "Air Conditioning",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "fsdfsdk52325",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_all_races_welcome"
+              },
+              "ui_rules": {
+                "label": "All Races Welcome",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "gfd5325235",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_cooking_allowed"
+              },
+              "ui_rules": {
+                "label": "Cooking Allowed",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "hkj214jkhjkdcas897",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_internet_access"
+              },
+              "ui_rules": {
+                "label": "Internet Access",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "dfsdf132as1f32as1f",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_no_owner_stay"
+              },
+              "ui_rules": {
+                "label": "No Owner Staying",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "e4twklhkwlfsd903248",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_pub_included"
+              },
+              "ui_rules": {
+                "label": "PUB included",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "fsdkhahkjdfv21321231",
+              "meta": {
+                "component": "switch",
+                "default_value": false,
+                "field_name": "is_visitors_allowed"
+              },
+              "ui_rules": {
+                "label": "Visitors Allowed",
+                "visible": true
+              },
+              "validation_rules": []
+            }
+          ],
+          "id": "eiu345yiu2y3r876wf",
+          "meta": {
+            "footer": null,
+            "group_name": "other_details_group",
+            "header": "TAG_OTHER_DETAILS_GROUP_LABEL",
+            "visible": true
+          }
+        }
+      ],
+      "validation_rules": [
+        {
+          "error_message": "ERR_MSG_ATTACH_PHOTO_MIN",
+          "type": "min_media",
+          "value": 1
+        },
+        {
+          "error_message": "ERR_MSG_ATTACH_PHOTO_MAX",
+          "type": "max_media",
+          "value": 4
+        }
+      ]
+    }
+  ]
+}
